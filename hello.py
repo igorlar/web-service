@@ -9,5 +9,5 @@ app = Flask(__name__)
 def show_message():
     name = request.args.get('name', default = 'USER', type = str)
     message = request.args.get('message', default = 'HELLO', type = str)
-    return f"<h2>{escape(name)}! {escape(message)}</h2>"
+    return f"<h2>Hello, {escape(name)}! {escape(message)}</h2>"
 
